@@ -1,0 +1,87 @@
+/* Your button CSS file */
+.btn-medium {
+  padding: 10px 25px;
+  border: 1px solid #afafaf;
+  border-radius: 30px;
+  color: #afafaf;
+  font-weight: lighter;
+}
+
+.btn-medium:hover {
+  color: #727272;
+  border: 1px solid #727272;
+}
+
+.btn-treehouse {
+  background: #6AD58B;
+  color: white;
+  font-weight: bolder; 
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+
+.btn-treehouse:hover {
+  background: rgb(93, 197, 124);
+}
+
+.btn-draw-border {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem "Roboto Slab", sans-serif;
+  padding: 0.6em 2em;
+  letter-spacing: 0.05rem;
+}
+
+.btn-draw-border {
+  box-shadow: inset 0 0 0 4px #58afd1;
+  color: #58afd1;
+  -webkit-transition: color 0.25s 0.0833333333s;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+
+.btn-draw-border::before, .btn-draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.btn-draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+
+.btn-draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+
+.btn-draw-border:hover {
+  color: #6AD58B;
+}
+
+.btn-draw-border:hover::before, .btn-draw-border:hover::after {
+  border-color: #6AD58B;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-draw-border:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+          transition-delay: 0s, 0s, 0.25s;
+}
+
+.btn-draw-border:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+          transition-delay: 0s, 0.25s, 0s;
+}

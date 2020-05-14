@@ -1,0 +1,111 @@
+/* Your card CSS file */
+
+.card-category, .card-trip, .card-product {
+  display: flex;
+  margin: 20px auto;
+}
+
+.card-category p, .card-trip p, .card-product p{
+  opacity: .7;
+}
+
+.card-category {
+  height: 180px;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1529411081224-84ac0d0bf6ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80');
+  border-radius: 5px;
+  -webkit-box-shadow: 0 10px 15px 0px rgba(119, 119, 119, 0.400);
+  -moz-box-shadow: 0 10px 15px 0px rgba(119, 119, 119, 0.400);
+  box-shadow: 0 10px 15px 0px rgba(119, 119, 119, 0.400);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-title {
+  color: white;
+  font-size: 1.6em;
+}
+
+.card-product {
+  height: 120px;
+  background-color: white;
+  -webkit-box-shadow: 0 10px 15px 0px rgba(119, 119, 119, 0.250);
+  -moz-box-shadow: 0 10px 15px 0px rgba(119, 119, 119, 0.250);
+  box-shadow: 0 10px 15px 0px rgba(119, 119, 119, 0.250);
+}
+
+.product-info {
+  flex-direction: column;
+  padding: 20px 20px 0;
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-trip {
+  background-color: white;
+  flex-direction: column;
+  height: 300px;
+  -webkit-box-shadow: 0 10px 15px 0px rgba(119, 119, 119, 0.250);
+  -moz-box-shadow: 0 10px 15px 0px rgba(119, 119, 119, 0.250);
+  box-shadow: 0 10px 15px 0px rgba(119, 119, 119, 0.250);
+}
+
+.trip-info{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px 0;
+  font-size: 0.8em;
+  line-height: 0.5em;
+  justify-content: space-between;
+}
+
+.card-trip img {
+  height: 75%;
+  object-fit: cover;
+}
+
+.avatar-round-xs {
+  position: absolute;
+  border: 2px solid white;
+  top: -25px;
+  right: 12px;
+  border-radius: 50%;
+  width: 50px;
+}
+
+.trip-price {
+  font-weight: bolder;
+  font-size: 1.2em;
+  margin-top: 65%;
+}
+
+.trip-price::before {
+  content: "€ ";
+}
+
+.card-feature {
+  padding: 10px;
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-box-shadow: 0 1px 15px 0px rgba(119, 119, 119, 0.250);
+  -moz-box-shadow: 0 1px 15px 0px rgba(119, 119, 119, 0.250);
+  box-shadow: 0 1px 15px 0px rgba(119, 119, 119, 0.250);
+}
+
+.card-feature img {
+  max-height: 130px;
+}
+
+.card-feature p {
+  text-align: center;
+}
